@@ -6,6 +6,28 @@
     android:orientation="vertical"
     tools:context=".TagActivity">
 
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/toolbar"
+        android:background="#041B72">
+
+        <View
+            android:id="@+id/maru_logo"
+            android:layout_width="58dp"
+            android:layout_height="56.83dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-23.02dp"
+            android:background="@drawable/icon"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
     <TextView
         android:id="@+id/tag_title"
         android:layout_width="wrap_content"
@@ -31,8 +53,8 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="210dp"
             android:enabled="true"
-            android:hint="#을 붙여서 입력해주세요"
             android:fontFamily="@font/nanumbarungothic"
+            android:hint="#을 붙여서 입력해주세요"
             android:inputType="text" />
 
         <Button
