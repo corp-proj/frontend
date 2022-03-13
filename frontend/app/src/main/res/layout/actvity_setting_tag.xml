@@ -6,8 +6,6 @@
     android:orientation="vertical"
     tools:context=".TagActivity">
 
-
-
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -76,14 +74,14 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/add_tag_layout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="280dp" />
 
 
 
     <TextView
-        android:id="@+id/suggest_tag"
+        android:id="@+id/suggest_tag_title"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginLeft="40dp"
@@ -99,14 +97,15 @@
         <HorizontalScrollView
             android:layout_marginTop="580dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="65dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="65dp"
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/suggest_tag_1"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_marginLeft="40dp"
@@ -119,6 +118,7 @@
                     android:textSize="10sp" />
 
                 <Button
+                    android:id="@+id/suggest_tag_2"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_marginLeft="20dp"
@@ -131,6 +131,7 @@
                     android:textSize="10sp" />
 
                 <Button
+                    android:id="@+id/suggest_tag_3"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_marginLeft="20dp"
@@ -143,6 +144,7 @@
                     android:textSize="10sp" />
 
                 <Button
+                    android:id="@+id/suggest_tag_4"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_marginLeft="20dp"
@@ -155,6 +157,7 @@
                     android:textSize="10sp" />
 
                 <Button
+                    android:id="@+id/suggest_tag_5"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_marginLeft="20dp"
@@ -169,6 +172,18 @@
             </LinearLayout>
 
         </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="save"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nanumsquareb"
+        android:background="@drawable/input_box"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="680dp"/>
+
 
 
 

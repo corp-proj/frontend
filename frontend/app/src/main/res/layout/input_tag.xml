@@ -13,6 +13,6 @@
         android:background="@drawable/input_box"
         android:textColor="@color/white"
         android:fontFamily="@font/nanumbarunhothicbold"
-        android:text="8sp"/>
+        android:text="9sp"/>
 
 </LinearLayout>

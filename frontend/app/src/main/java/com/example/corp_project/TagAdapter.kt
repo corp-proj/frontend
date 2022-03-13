@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.corp_project.databinding.InputTagBinding
 
 class TagAdapter : RecyclerView.Adapter<Holder>() {
-    var tagData = mutableListOf<Tag>()
+    var tagData = ArrayList<Tag>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         //아이템 레이아웃을 생성, 한 화면에 8줄이 보이면 8번 호출됨
@@ -22,6 +22,11 @@ class TagAdapter : RecyclerView.Adapter<Holder>() {
 
         val tag = tagData.get(position)
         holder.setTag(tag)
+
+        //간격 조절
+        val layoutParams = holder.itemView.layoutParams
+        layoutParams.height = 200
+        holder.itemView.requestLayout()
 
     }
 

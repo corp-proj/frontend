@@ -1,3 +1,5 @@
 package com.example.corp_project
 
-data class Tag(var name:String)
+import java.io.Serializable
+
+data class Tag(var name:String):Serializable
