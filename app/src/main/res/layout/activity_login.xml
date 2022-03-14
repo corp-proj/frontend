@@ -10,6 +10,27 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/toolbar"
+        android:background="#041B72">
+
+        <View
+            android:id="@+id/maru_logo"
+            android:layout_width="58dp"
+            android:layout_height="56.83dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-23.02dp"
+            android:background="@drawable/icon"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -49,6 +70,9 @@
             android:gravity="center"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
             tools:layout_editor_absoluteY="30dp">
 
             <EditText
@@ -60,6 +84,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
             <EditText
                 android:id="@+id/password"
