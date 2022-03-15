@@ -26,6 +26,8 @@
     </androidx.appcompat.widget.Toolbar>
 
 
+
+
     <TextView
         android:id="@+id/tag_title"
         android:layout_width="wrap_content"
@@ -37,6 +39,16 @@
         android:text="관심키워드를 입력하세요"
         android:textColor="#474864"
         android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/nanumsquarer"
+            android:text="(5개를 선택하세요)"
+            android:textColor="@color/black"/>
+
 
 
     <LinearLayout

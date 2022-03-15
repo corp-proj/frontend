@@ -72,8 +72,9 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <!--<com.google.android.material.textfield.TextInputEditText
             tools:layout_editor_absoluteY="30dp">
+            </com.google.android.material.textfield.TextInputEditText>-->
 
             <EditText
                 android:id="@+id/email"
@@ -95,6 +96,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
