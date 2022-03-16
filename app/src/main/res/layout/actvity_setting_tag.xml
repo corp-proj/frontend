@@ -46,7 +46,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="180dp"
             android:fontFamily="@font/nanumsquarer"
-            android:text="(5개를 선택하세요)"
+            android:text="(5개를 입력하세요)"
             android:textColor="@color/black"/>
 
 
@@ -64,7 +64,6 @@
             android:layout_marginTop="210dp"
             android:enabled="true"
             android:fontFamily="@font/nanumbarungothic"
-            android:hint="#을 붙여서 입력해주세요"
             android:inputType="text" />
 
         <Button
@@ -125,7 +124,7 @@
                     android:elevation="10dp"
                     android:fontFamily="@font/nanumbarunhothicbold"
                     android:gravity="center"
-                    android:text="#코로나 19"
+                    android:text="코로나 19"
                     android:textColor="@color/black"
                     android:textSize="10sp" />
 
@@ -138,7 +137,7 @@
                     android:elevation="10dp"
                     android:fontFamily="@font/nanumbarunhothicbold"
                     android:gravity="center"
-                    android:text="#20대 대선"
+                    android:text="20대 대선"
                     android:textColor="@color/black"
                     android:textSize="10sp" />
 
@@ -151,7 +150,7 @@
                     android:elevation="10dp"
                     android:fontFamily="@font/nanumbarunhothicbold"
                     android:gravity="center"
-                    android:text="#갤럭시 S22"
+                    android:text="갤럭시 S22"
                     android:textColor="@color/black"
                     android:textSize="10sp" />
 
@@ -164,7 +163,7 @@
                     android:elevation="10dp"
                     android:fontFamily="@font/nanumbarunhothicbold"
                     android:gravity="center"
-                    android:text="#울진 산불"
+                    android:text="울진 산불"
                     android:textColor="@color/black"
                     android:textSize="10sp" />
 
@@ -177,7 +176,7 @@
                     android:elevation="10dp"
                     android:fontFamily="@font/nanumbarungothic"
                     android:gravity="center"
-                    android:text="#우크라이나"
+                    android:text="우크라이나"
                     android:textColor="@color/black"
                     android:textSize="10sp" />
 

@@ -67,6 +67,8 @@ class TagActivity : AppCompatActivity() {
             }
         })
 
+        /*
+
         //추천 키워드를 클릭했을 때
         //이미 입력한 키워드가 5개 이상 ->  더이상 추가할 수 없도록 설계
         tBinding.suggestTag1.setOnClickListener {
@@ -184,7 +186,7 @@ class TagActivity : AppCompatActivity() {
                 tagList.removeAt(index)
             }
             clickcnt++
-        }
+        }*/
 
 
         //해시태그 저장 버튼
