@@ -8,10 +8,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/back_icon"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,26 +19,28 @@
                 android:id="@+id/ic_backspace"
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="75dp" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/news_title"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/nanumsquareb"
+                android:gravity="center"
+                android:textColor="@color/black"
                 android:text="제목"
-                android:layout_marginLeft="10sp"
-                android:textSize="50sp" />
+                android:textSize="21dp" />
+
+            <!--
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15sp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="10sp"
                 android:layout_marginBottom="15sp"
                 android:orientation="horizontal">
@@ -73,15 +71,23 @@
                     android:text="#기표소"
                     android:textSize="20sp" />
             </LinearLayout>
+            -->
+
+
             <TextView
-                android:id="@+id/tv_news"
+                android:id="@+id/news_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="기사 크롤링"
                 android:layout_marginLeft="10sp"
-                android:textSize="40sp" />
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/nanumsquarer"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="기사 요약중 입니다.."
+                android:textSize="20dp" />
 
         </LinearLayout>
+
         <Button
             android:id="@+id/btn_news_detail"
             android:layout_width="wrap_content"
@@ -89,9 +95,10 @@
             android:layout_gravity="right"
             android:layout_marginTop="60dp"
             android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/nanumsquareb"
             android:text="전문보기 ➤"
             android:textColor="@color/black"
-            android:textSize="17sp"
-            android:backgroundTint="@color/white"/>
+            android:textSize="17sp" />
     </FrameLayout>
 </LinearLayout>

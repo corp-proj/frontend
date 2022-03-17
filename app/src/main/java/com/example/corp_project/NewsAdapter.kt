@@ -10,7 +10,7 @@ import com.example.corp_project.databinding.NewsListBinding
 
 
 class NewsAdapter : RecyclerView.Adapter<NewsHolder>() {
-    var NewsList = mutableListOf<News>()
+    var NewsList = ArrayList<News>()
     lateinit var nbinding: NewsListBinding
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsHolder {
@@ -34,9 +34,11 @@ class NewsAdapter : RecyclerView.Adapter<NewsHolder>() {
         holder.setTitle(news)
 
         //리스트를 클릭했을 때 뉴스 보기 화면으로 전환
-        holder. nbinding.newsTitle.setOnClickListener(View.OnClickListener { v ->
+        holder.nbinding.newsTitle.setOnClickListener(View.OnClickListener { v ->
             var intent = Intent(v.context, DetailActivity::class.java)
-            intent.putExtra("title", news.toString())
+            intent.putExtra("title", news.title)
+            intent.putExtra("content",news.text)
+            intent.putExtra("url", news.url)
             v.context.startActivity(intent)
         })
 

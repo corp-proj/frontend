@@ -75,7 +75,6 @@ class NewsList1 : Fragment() {
                 response: Response<List<News>>
             ) {
                 adapter.NewsList.addAll(response.body() as List<News>)
-                //adapter.NewsList = response.body() as MutableList<News>
                 adapter.notifyDataSetChanged()
             }
         })

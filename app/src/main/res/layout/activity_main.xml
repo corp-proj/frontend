@@ -39,7 +39,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="60dp"
             android:fontFamily="@font/nanumbarunhothicbold"
-            android:text="maru42 님의 맞춤 뉴스"
+            android:text="42MARU 님의 맞춤 뉴스"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
