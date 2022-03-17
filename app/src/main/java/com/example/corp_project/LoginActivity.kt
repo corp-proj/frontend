@@ -32,7 +32,6 @@ class LoginActivity : AppCompatActivity() {
             if (email.text.isNotEmpty() && password.text.isNotEmpty()) {
                 joinUser()
                 if (checkValidPw(email.text.toString()) == password.text.toString()) {
-                        Log.d("user", "첫 사용자")
                         Toast.makeText(this, "어떤 뉴스를 좋아하세요?",Toast.LENGTH_SHORT).show()
                         val intent = Intent(this,TagActivity::class.java)
                         startActivity(intent)
@@ -53,11 +52,6 @@ class LoginActivity : AppCompatActivity() {
         val password : EditText = findViewById(R.id.password)
         val pkId = db.getDao().getEmail().size + 1
         db.getDao().insertUser(UserInfo(pkId, email.text.toString(), password.text.toString()))
-    }
-
-    //가입 여부 체크해서 첫 등록자인지 확인
-    private fun checkFirstUser(): Boolean {
-        return db.getDao().getEmail().isNotEmpty()
     }
 
     private fun checkValidPw(email: String): String {
