@@ -43,4 +43,5 @@ class NewsHolder(val nbinding: NewsListBinding) : RecyclerView.ViewHolder(nbindi
     }
 
 
+
 }

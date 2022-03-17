@@ -72,9 +72,6 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
-            tools:layout_editor_absoluteY="30dp">
-
             <EditText
                 android:id="@+id/email"
                 android:layout_width="380dp"

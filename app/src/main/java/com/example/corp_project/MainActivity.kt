@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
                     NewsList1()
                 )
                 transaction.commit()
+
             } else {
                 mbinding.mainTag1.setBackgroundResource(R.drawable.suggest_word)
                 mbinding.mainTag1.setTextColor(Color.parseColor("#000000"))

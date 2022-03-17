@@ -1,5 +1,6 @@
 package com.example.corp_project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -33,9 +34,10 @@ class LoginActivity : AppCompatActivity() {
                     if (checkValidPw(email.text.toString()) == password.text.toString()) {
                         Log.d("user", "첫 사용자")
                         Toast.makeText(this, "어떤 뉴스를 좋아하세요?",Toast.LENGTH_SHORT).show()
-                        /*val intent = Intent()
+                        val intent = Intent(this@LoginActivity, TagActivity::class.java)
                         startActivity(intent)
-                        finish()*/
+                        finish()
+
                     } else {
                         Log.d("user", "첫 사용자")
                         Toast.makeText(this, "아이디와 비밀번호가 일치하지 않습니다.",Toast.LENGTH_SHORT).show()
