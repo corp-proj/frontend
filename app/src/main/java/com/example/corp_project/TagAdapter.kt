@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.corp_project.databinding.ActivityLoginBinding.bind
 import com.example.corp_project.databinding.InputTagBinding
 
 class TagAdapter : RecyclerView.Adapter<Holder>() {
@@ -18,16 +19,35 @@ class TagAdapter : RecyclerView.Adapter<Holder>() {
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        //데이터와 레이아웃을 연결하는 메서드
 
+        //데이터와 레이아웃을 연결하는 메서드
         val tag = tagData.get(position)
         holder.setTag(tag)
+
+        //ClickListener
+        holder.itemView.setOnClickListener {
+            itemClickListener.onClick(it, position)
+        }
+        holder.apply {
+            setTag(tag)
+        }
+
 
         //간격 조절
         val layoutParams = holder.itemView.layoutParams
         layoutParams.height = 200
         holder.itemView.requestLayout()
 
+    }
+
+    //ClickListener
+    interface OnItemClickListener {
+        fun onClick(v: View, position: Int)
+    }
+    private lateinit var itemClickListener : OnItemClickListener
+
+    fun setItemClickListener(itemClickListener: OnItemClickListener) {
+        this.itemClickListener = itemClickListener
     }
 
 
@@ -50,6 +70,9 @@ class TagAdapter : RecyclerView.Adapter<Holder>() {
         //리사이클러뷰에서 사용할 데이터의 총 개수를 리턴하는 메서드
         return tagData.size
     }
+
+
+
 }
 
 class Holder(val binding: InputTagBinding) : RecyclerView.ViewHolder(binding.root) {
