@@ -1,4 +1,4 @@
-# 42MARU X KUSITHMS
+# 42MARU X KUSITMS
 > 한국어 뉴스 요약 모델을 활용한 개인화된 뉴스추천 서비스
 
 ### Login
